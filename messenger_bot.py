@@ -96,7 +96,7 @@ def process(message):
     return y
 ###############################
 
-#print  process('Hey, I am  Amol, I  live  in Aurangabad')
+print  process('Hey, I am  Amol, I  live  in Aurangabad')
 
 @app.route('/', methods=['GET'])
 def handle_verification():
