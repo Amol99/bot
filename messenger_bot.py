@@ -1,7 +1,7 @@
 from flask import Flask, request
 import json
 import requests
-from Credentials import PAGE_ACCESS_TOKEN,VERIFY_TOKEN
+#from Credentials import PAGE_ACCESS_TOKEN,VERIFY_TOKEN
 import os
 from chatterbotapi import *
 import string
