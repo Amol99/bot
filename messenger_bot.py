@@ -6,7 +6,7 @@ import os
 from chatterbotapi import *
 import string
 import random
-from textblob import TextBlob
+#from textblob import TextBlob
 from Functions import *
 import nltk
 from nltk.corpus import stopwords
