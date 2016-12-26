@@ -100,6 +100,7 @@ print  process('Hey, I am  Amol, I  live  in Aurangabad')
 
 @app.route('/', methods=['GET'])
 def handle_verification():
+    print 'got get request'
     if request.args.get('hub.verify_token', 200) == VERIFY_TOKEN:
         return request.args.get('hub.challenge'), 200
     else:
@@ -109,6 +110,7 @@ def handle_verification():
 @app.route('/', methods=['POST'])
 def handle_messages():
     global state
+    print 'got post request'
     payload = request.get_data()
     for sender, message in messaging_events(payload):
         msg = process(message)
